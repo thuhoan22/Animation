@@ -1,46 +1,4 @@
 @charset "utf-8";
-
-/* Inter */
-@font-face {
-  font-weight: 700;
-  font-family: "Inter";
-  src: url("../font/Inter-Bold.eot");
-  src: url("../font/Inter-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../font/Inter-Bold.woff2") format("woff2"),
-    url("../font/Inter-Bold.woff") format("woff"),
-    url("../font/Inter-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-weight: 600;
-  font-family: "Inter";
-  src: url("../font/Inter-SemiBold.eot");
-  src: url("../font/Inter-SemiBold.eot?#iefix") format("embedded-opentype"),
-    url("../font/Inter-SemiBold.woff2") format("woff2"),
-    url("../font/Inter-SemiBold.woff") format("woff"),
-    url("../font/Inter-SemiBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-weight: 500;
-  font-family: "Inter";
-  src: url("../font/Inter-Medium.eot");
-  src: url("../font/Inter-Medium.eot?#iefix") format("embedded-opentype"),
-    url("../font/Inter-Medium.woff2") format("woff2"),
-    url("../font/Inter-Medium.woff") format("woff"),
-    url("../font/Inter-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-weight: 400;
-  font-family: "Inter";
-  src: url("../font/Inter-Regular.eot");
-  src: url("../font/Inter-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../font/Inter-Regular.woff2") format("woff2"),
-    url("../font/Inter-Regular.woff") format("woff"),
-    url("../font/Inter-Regular.ttf") format("truetype");
-}
-
 /* Reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,textarea,input,select,textarea,button,article,aside,dialog,footer,header,section,footer,nav,figure,main{margin:0;padding:0}
 article,aside,dialog,footer,header,section,footer,nav,figure,main{display:block}
