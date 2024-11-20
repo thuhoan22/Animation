@@ -172,6 +172,12 @@ header .inner {
   justify-content: space-between;
   padding: 22px 0 21px;
 }
+.header-ct .logo {
+  width: 70px;
+}
+.header-ct .logo img {
+  width: 100%;
+}
 .header-ct .gnb {
   display: flex;
   align-items: center;
