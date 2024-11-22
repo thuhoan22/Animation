@@ -170,10 +170,10 @@ header .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22px 0 21px;
+  padding: 14px 0 21px;
 }
-.header-ct .logo {
-  width: 70px;
+.header-ct .logo-link {
+  width: 120px;
 }
 .header-ct .logo img {
   width: 100%;
