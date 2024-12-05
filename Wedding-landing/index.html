@@ -21,16 +21,16 @@
               <a href="#none" class="logo-link"><img src="image/logo.png" alt="Enchanted Wedding"></a>
             </h1>
             <ul class="gnb-list">
-              <li class="gnb-item"><a href="#none">Home</a></li>
-              <li class="gnb-item"><a href="#none">About</a></li>
-              <li class="gnb-item"><a href="#none">Stories</a></li>
-              <li class="gnb-item"><a href="#none">Event</a></li>
-              <li class="gnb-item"><a href="#none">Gallery</a></li>
-              <li class="gnb-item"><a href="#none">Contact</a></li>
+              <li class="gnb-item"><a href="#key-visual">Home</a></li>
+              <li class="gnb-item"><a href="#about">About</a></li>
+              <li class="gnb-item"><a href="#stories">Stories</a></li>
+              <li class="gnb-item"><a href="#event">Event</a></li>
+              <li class="gnb-item"><a href="#gallery">Gallery</a></li>
+              <li class="gnb-item"><a href="#contact">Contact</a></li>
             </ul>
-            <div class="btn-wrap">
+            <!-- <div class="btn-wrap">
               <button type="button" class="btn btn-header">Book</button>
-            </div>
+            </div> -->
         </div>
       </div>
 		</header>
@@ -38,7 +38,7 @@
 
 		<!-- CONTAINER -->
 		<main id="container" class="container">
-      <div class="key-visual">
+      <div class="key-visual" id="key-visual">
         <div class="key-visual-info">
           <span class="text-sub animate" style="--i:1">Life is an event</span>
           <h2 class="text-title animate" style="--i:2">Creating the Best Day Ever</h2>
@@ -55,7 +55,7 @@
           </div>
         </div>
       </div>
-      <section class="section about">
+      <section class="section about" id="about">
         <div class="inner">
           <ul class="section-list">
             <li class="section-item">
@@ -109,17 +109,54 @@
           </ul>
         </div>
       </section>
-      <section class="section stories">
+      <section class="section stories" id="stories">
         <div class="inner">
-          
+          <div class="box-head">
+            <h2 class="text-title animate" style="--i:1">Our Story</h2>
+          </div>
+          <div class="box-content animate" style="--i:2">
+            <p class="text">Feugiat pretium egestas enim blandit purus euismod. Feugiat magna aliquam lectus lectus eu amet. Eros, accumsan purus enim nascetur quam diam felis, fringilla varius. Quis purus nisl orci eu, ultrices. Purus pretium egestas ultricies tempus sit elit. Maecenas pellentesque sit eros vitae. Maecenas suspendisse tincidunt ullamcorper justo neque quis et, laoreet.</p>
+            <p class="text">Vitae lacus, aliquet lorem mauris, sit dolor sodales. Nullam quam quis lorem dui tristique massa enim. Faucibus sed egestas mollis vivamus et sed sed.</p>
+            <p class="text">Feugiat magna aliquam lectus lectus eu amet. Eros, accumsan purus enim nascetur quam diam felis, fringilla varius. Quis purus nisl orci eu, ultrices. Purus pretium egestas ultricies tempus sit elit.</p>
+          </div>
         </div>
       </section>
-      <section class="section event">
+      <section class="section event" id="event">
         <div class="inner">
-         
+          <div class="box-head">
+            <h2 class="text-title animate" style="--i:1">Event</h2>
+          </div>
+          <div class="box-content">
+            <ul class="event-list">
+              <li class="event-item">
+                <span class="event-thumb animate animate-zoom-bg" style="--i:1"><img src="image/img-event-01.jpg" alt=""></span>
+                <div class="event-detail animate" style="--i:1">
+                  <strong class="text-title">Hotel 1</strong>
+                  <p class="text-desc">Aliquam eget velit vel massa ornare tincidunt.</p>
+                  <span class="text-time">July 15, 2022 - Boise, Idaho</span>
+                  <button type="button" class="btn btn-section">Google map</button>
+                </div>
+                <div class="bg-decor">
+                  <span class="decor decor01"><img src="image/img-decor-03.png" alt=""></span>
+                </div>
+              </li>
+              <li class="event-item">
+                <span class="event-thumb animate animate-zoom-bg" style="--i:1"><img src="image/img-event-02.jpg" alt=""></span>
+                <div class="event-detail animate" style="--i:1">
+                  <strong class="text-title">Hotel 2</strong>
+                  <p class="text-desc">Feugiat pretium egestas enim blandit purus euismod.</p>
+                  <span class="text-time">July 15, 2022 - Boise, Idaho</span>
+                  <button type="button" class="btn btn-section">Google map</button>
+                </div>
+                <div class="bg-decor">
+                  <span class="decor decor02"><img src="image/img-decor-04.png" alt=""></span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="section gallery">
+      <section class="section gallery" id="gallery">
         <div class="inner">
           <div class="box-head">
             <span class="text-sub animate" style="--i:1">The wedding party</span>
@@ -129,22 +166,22 @@
             <div class="swiper swiper-gallery">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
-                  <span class="thumb"><img src="image/img-gallery-01.png" alt=""></span>
+                  <span class="thumb"><img src="image/img-gallery-01.jpg" alt=""></span>
                 </li>
                 <li class="swiper-slide">
-                  <span class="thumb"><img src="image/img-gallery-02.png" alt=""></span>
+                  <span class="thumb"><img src="image/img-gallery-02.jpg" alt=""></span>
                 </li>
                 <li class="swiper-slide">
-                  <span class="thumb"><img src="image/img-gallery-03.png" alt=""></span>
+                  <span class="thumb"><img src="image/img-gallery-03.jpg" alt=""></span>
                 </li>
                 <li class="swiper-slide">
-                  <span class="thumb"><img src="image/img-gallery-01.png" alt=""></span>
+                  <span class="thumb"><img src="image/img-gallery-04.jpg" alt=""></span>
                 </li>
                 <li class="swiper-slide">
-                  <span class="thumb"><img src="image/img-gallery-02.png" alt=""></span>
+                  <span class="thumb"><img src="image/img-gallery-05.jpg" alt=""></span>
                 </li>
                 <li class="swiper-slide">
-                  <span class="thumb"><img src="image/img-gallery-03.png" alt=""></span>
+                  <span class="thumb"><img src="image/img-gallery-06.jpg" alt=""></span>
                 </li>
               </ul>
               <span class="swiper-button-next"></span>
@@ -154,14 +191,38 @@
           </div>
         </div>
       </section>
+      <section class="section contact" id="contact">
+        <div class="box-head animate animate-left" style="--i:1">
+          <h2 class="text-title">Contact!</h2>
+          <p class="text-desc">Phasellus accumsan neque viverra ut sem aliquam purus rhoncus, morbi. Ut in eget leo dui nunc. Tortor viverra magna dignissim sit. Libero eu euismod risus, mauris etiam ut morbi amet in. Tortor duis dignissim adipiscing sem.</p>
+        </div>
+        <div class="box-content animate animate-right" style="--i:1">
+          <ul class="contact-list">
+            <li class="contact-item">
+              <strong class="name">Groom: Caleb</strong>
+              <span class="phone"><a href="tel:01234 987654" class="contact-link">01234 987654</a></span>
+              <span class="email"><a href="mailto:contact@wedding.com" class="contact-link">contact@wedding.com</a></span>
+              <span class="bank"><img src="image/img-qrcode-01.jpg" alt=""></span>
+            </li>
+            <li class="contact-item">
+              <strong class="name">Bride: Amaya</strong>
+              <span class="phone"><a href="tel:098765 34621" class="contact-link">098765 34621</a></span>
+              <span class="email"><a href="mailto:contact@wedding.com" class="contact-link">contact@wedding.com</a></span>
+              <span class="bank"><img src="image/img-qrcode-01.jpg" alt=""></span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-decor">
+          <span class="decor decor01"><img src="image/img-decor-07.png" alt=""></span>
+        </div>
+      </section>
 		</main>
 		<!-- END CONTAINER -->
 
     <!-- FOOTER -->
     <footer>
       <div class="inner">
-        <div class="footer-content">
-        </div>
+        <p class="copyright">HN copyright &copy; 2024</p>
       </div>
     </footer>
     <!-- END FOOTER -->

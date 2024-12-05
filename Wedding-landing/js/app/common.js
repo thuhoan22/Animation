@@ -1,23 +1,15 @@
 ; (function (win, $) {
 
-	var accordion = function () {
-		var accordionOn = $('.js-vision').find('.detail-item').hasClass('is-open');
+  // Func: Move to section
+  var valSpace = 100;
+  $('.gnb-item a').click(function (e) {
+    e.preventDefault();
+    var sectionTarget = $(this).attr('href');
 
-		if (accordionOn) {
-			$('.js-vision').find('.detail-item.is-open').children('.box-content').css('display','block');
-		}
-		$('.js-vision').find('.btn-item').on('click', function() {
-			if($(this).parents('.detail-item').hasClass('is-open')) {
-				$(this).parents('.detail-item').removeClass('is-open');
-				$(this).parents('.detail-item').find('.box-content').slideUp();
-			} else {
-				$('.js-vision').find('.is-open').removeClass('is-open');
-				$('.js-vision').find('.box-content').slideUp();
-				$(this).parents('.detail-item').addClass('is-open');
-				$(this).parents('.detail-item').find('.box-content').slideDown();
-			}
-		});
-	}
+    $('html, body').animate({
+      scrollTop: $(sectionTarget).offset().top - valSpace
+    }, 400);
+  });
 
   // Swiper: Gallery
   var swiperGallery = new Swiper('.swiper-gallery', {
@@ -25,9 +17,15 @@
     slidesPerView: 'auto',
     centeredSlides: true,
     loop: true,
+    initialSlide: 0,
     navigation: {
       nextEl: '.swiper-gallery .swiper-button-next',
       prevEl: '.swiper-gallery .swiper-button-prev',
+    },
+    breakpoints: {
+      1024: {
+        initialSlide: 1,
+      },
     },
   });
 
@@ -49,7 +47,6 @@
 	});
 
 	$(win).on('load', function () {
-		accordion();
     handleInteraction();
 	});
 
