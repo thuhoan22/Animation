@@ -16,21 +16,26 @@
 		<!-- HEADER -->
 		<header class="header">
       <div class="inner">
+        <!-- [D] Add class "is-open" into class "header-gnb" when click button "btn-mobile" -->
 			  <div class="header-gnb">
             <h1 class="logo">
               <a href="#none" class="logo-link"><img src="image/logo.png" alt="Enchanted Wedding"></a>
             </h1>
-            <ul class="gnb-list">
-              <li class="gnb-item"><a href="#key-visual">Home</a></li>
-              <li class="gnb-item"><a href="#about">About</a></li>
-              <li class="gnb-item"><a href="#stories">Stories</a></li>
-              <li class="gnb-item"><a href="#event">Event</a></li>
-              <li class="gnb-item"><a href="#gallery">Gallery</a></li>
-              <li class="gnb-item"><a href="#contact">Contact</a></li>
-            </ul>
-            <!-- <div class="btn-wrap">
-              <button type="button" class="btn btn-header">Book</button>
-            </div> -->
+            <div class="gnb">
+              <ul class="gnb-list">
+                <li class="gnb-item"><a href="#key-visual" class="gnb-link">Home</a></li>
+                <li class="gnb-item"><a href="#about" class="gnb-link">About</a></li>
+                <li class="gnb-item"><a href="#stories" class="gnb-link">Stories</a></li>
+                <li class="gnb-item"><a href="#event" class="gnb-link">Event</a></li>
+                <li class="gnb-item"><a href="#gallery" class="gnb-link">Gallery</a></li>
+                <li class="gnb-item"><a href="#contact" class="gnb-link">Contact</a></li>
+              </ul>
+              <!-- <div class="btn-wrap">
+                <button type="button" class="btn btn-header">Book</button>
+              </div> -->
+            </div>
+            <!-- [D] Add class "is-active" into class "btn-mobile" when click -->
+            <button type="button" class="btn-mobile js-gnb-mobile" aria-expanded="false"></button>
         </div>
       </div>
 		</header>
@@ -60,7 +65,7 @@
           <ul class="section-list">
             <li class="section-item">
               <div class="section-image">
-                <span class="thumb animate animate-left" style="--i:1"><img src="image/img-about-01.png" alt=""></span>
+                <span class="thumb animate-left" style="--i:1"><img src="image/img-about-01.png" alt=""></span>
                 <span class="thumb-sub animate" style="--i:1.5"><img src="image/img-about-01_1.png" alt=""></span>
                 <div class="bg-decor">
                   <span class="decor decor01"><img src="image/img-decor-05.png" alt=""></span>
@@ -82,7 +87,7 @@
                 <button type="button" class="btn btn-section animate" style="--i:4">Explore</button>
               </div>
               <div class="section-image">
-                <span class="thumb animate animate-right" style="--i:1"><img src="image/img-about-02.png" alt=""></span>
+                <span class="thumb animate-right" style="--i:1"><img src="image/img-about-02.png" alt=""></span>
                 <span class="thumb-sub animate" style="--i:1.5"><img src="image/img-about-02_1.png" alt=""></span>
                 <div class="bg-decor">
                   <span class="decor decor01"><img src="image/img-decor-05.png" alt=""></span>
@@ -200,15 +205,19 @@
           <ul class="contact-list">
             <li class="contact-item">
               <strong class="name">Groom: Caleb</strong>
-              <span class="phone"><a href="tel:01234 987654" class="contact-link">01234 987654</a></span>
-              <span class="email"><a href="mailto:contact@wedding.com" class="contact-link">contact@wedding.com</a></span>
-              <span class="bank"><img src="image/img-qrcode-01.jpg" alt=""></span>
+              <div class="contact-detail">
+                <span class="phone"><a href="tel:01234 987654" class="contact-link">01234 987654</a></span>
+                <span class="email"><a href="mailto:contact@wedding.com" class="contact-link">contact@wedding.com</a></span>
+                <span class="bank"><img src="image/img-qrcode-01.jpg" alt=""></span>
+              </div>
             </li>
             <li class="contact-item">
               <strong class="name">Bride: Amaya</strong>
-              <span class="phone"><a href="tel:098765 34621" class="contact-link">098765 34621</a></span>
-              <span class="email"><a href="mailto:contact@wedding.com" class="contact-link">contact@wedding.com</a></span>
-              <span class="bank"><img src="image/img-qrcode-01.jpg" alt=""></span>
+              <div class="contact-detail">
+                <span class="phone"><a href="tel:098765 34621" class="contact-link">098765 34621</a></span>
+                <span class="email"><a href="mailto:contact@wedding.com" class="contact-link">contact@wedding.com</a></span>
+                <span class="bank"><img src="image/img-qrcode-01.jpg" alt=""></span>
+              </div>
             </li>
           </ul>
         </div>
@@ -229,6 +238,7 @@
 	</div>
 
   <script src="js/libs/jquery.min.js"></script>
+  <script src="js/libs/jquery-scrollLock.min.js"></script>
   <script src="js/libs/swiper-bundle.min.js"></script>
   <script src="js/app/common.js"></script>
 
